@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+
+body {
+    background-color: #ccc;
+}
+#header {
+    width: 100%;
+}
+#header .container {
+    height: 100px;
+    background-color: var(--main-color);
+    position: relative;
+}
+#header .container .logo {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 28px;
+}
+#header .container #header-gnb {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 531px;
+
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+#header-gnb .gnb {
+    display: flex;
+    text-align: center;
+    width: 694px;
+}
+.gnb > li {
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.gnb > li:hover {
+    background-color: #000;
+}
+.gnb > li > a {
+    display: block;
+}
+
+.gnb > li > .sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+    margin-top: 13px;
+}
+.gnb > li > .sub > li {
+    height: 50px;
+    line-height: 50px;
+}
+.gnb > li > .sub > li:hover {
+    background-color: #000;
+}
+.gnb > li > .sub > li > a {
+    display: block;
+}
+
+
+#header .container #toggle-menu-btn {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-top: 33px;
+    margin-right: 33px;
+}

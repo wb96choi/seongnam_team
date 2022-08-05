@@ -1,0 +1,21 @@
+:root {
+    --main-color: #000066;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}

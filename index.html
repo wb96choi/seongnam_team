@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성남아트센터</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </head>
+
 <body>
     <header id="header">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="LOGO">
+                <a href="./">
+                    <img src="images/logo.png" alt="LOGO">
+                </a>
             </div>
             <nav id="header-gnb">
                 <ul class="gnb">
@@ -34,7 +45,7 @@
                         </ul>
                     </li>
                     <li><a href="./">대관안내</a>
-                        
+
                     </li>
                     <li><a href="./">고객센터</a>
                         <ul class="sub">
@@ -47,20 +58,72 @@
                 </ul>
             </nav>
             <div id="toggle-menu-btn">
-                <img src="images/toggle-menu-btn.png" alt="toggle-menu-btn">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div id="toggle-menu">
+                    
             </div>
         </div>
     </header>
+    
+    
+
+    <div id="background-youtube">
+        <!-- &mute=1&loop=1&autoplay=1 를 꼭 붙여주기 -->
+        <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/Di6dlBmIQOk?controls=0&mute=1&loop=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
 
     <main id="main-home">
-        <div class="container">
-            <div class="left-curtain">
 
+        <div class="left-curtain">
+            <div class="title-ment">
+                <p>성남아트센터</p>
+                <p>What's ON</p>
             </div>
-            <div class="right-curtain">
+        </div>
+        <div class="right-curtain">
+
+        </div>
+
+    </main>
+
+    <main id="show">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/show-banner1.png" alt="show-banner1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/show-banner2.jpeg" alt="show-banner2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" alt="show-banner3">
+                </div>
                 
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
     </main>
 </body>
+
 </html>

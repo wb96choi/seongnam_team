@@ -44,6 +44,24 @@
             height: 50px;
             background-color: #ddd;
             margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #gnb {
+            /* display: none; */
+            background-color: #fff;
+            position: fixed;
+            width: 85%;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition-duration: 0.4s;
+            z-index: 999;
+        }
+
+        #gnb.on {
+            transform: translateX(0%);
         }
 
         #sec1 {
@@ -55,7 +73,7 @@
         }
 
         .background-youtube {
-            position: fixed;            
+            position: fixed;
             top: 0;
             left: 0;
             z-index: -1;
@@ -109,7 +127,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
 
 
@@ -119,6 +137,7 @@
             background-color: transparent;
             position: relative;
         }
+
         #sec3 .full-section {
             position: absolute;
             top: 25vh;
@@ -207,12 +226,38 @@
         <div class="util-menu">
             <details>
                 <summary>더보기</summary>
-                <p>공연정보Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quas ab mollitia laboriosam laborum accusamus, nesciunt possimus perferendis voluptates est, temporibus similique facere porro culpa eligendi doloribus natus tenetur at.</p>
+                <p>공연정보Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quas ab mollitia laboriosam
+                    laborum accusamus, nesciunt possimus perferendis voluptates est, temporibus similique facere porro
+                    culpa eligendi doloribus natus tenetur at.</p>
             </details>
         </div>
         <div class="toggle-menu-btn">
 
         </div>
+
+        <nav id="gnb">
+            <ul>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+                <li>
+                    <h1>asdasdasdad</h1>
+                </li>
+            </ul>
+            <button id="btn-close"><i class="bi bi-x"></i></button>
+        </nav>
     </header>
     <div class="background-youtube">
         <!-- &mute=1&loop=1&autoplay=1 를 꼭 붙여주기 -->
@@ -223,7 +268,7 @@
             allowfullscreen></iframe>
     </div>
     <main id="sec1">
-        
+
         <div class="left-section">
             <p data-aos="fade-right">성남<br>아트<br>센터</p>
         </div>
@@ -340,6 +385,30 @@
 
 
         });
+
+
+        $(function () {
+
+            /*** #gnb toggle ***/
+            // 1. 열기: #toggle-btn 클릭시 #gnb on
+            $('.toggle-menu-btn').click(function () {
+                $('#gnb').addClass('on');
+            });
+            // 2. 닫기: #btn-close 클릭시 #gnb 닫음
+            $('#btn-close').click(function () {
+                $('#gnb').removeClass('on');
+            });
+
+            /*** 검색창 열고, 닫기 */
+            // 1. #icon-menu .bi-search 누르면 열기
+            $('#icon-menu .bi-search').click(function () {
+                $(".search-box").addClass('on');
+            });
+            // 2. .search-box .btn-close 누르면 닫기
+            $('.search-box #btn-close').click(function () {
+                $(".search-box").removeClass('on');
+            })
+        }); // $
     </script>
 </body>
 

@@ -1,4 +1,5 @@
 :root {
+    --header-height: 100px;
     --main-color: #000066;
 }
 
@@ -6,6 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
 }
 ul {
     list-style-type: none;

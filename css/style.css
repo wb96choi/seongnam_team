@@ -227,23 +227,25 @@
 #tool-zone .container .tool-wrap {
     position: absolute;
     width: 150px;
-    height: 300px;
+    height: 150px;
     right: 0;
     bottom: 0;
     background-color: pink;
+    display: flex;
+    flex-direction: column;
 }
 
 #tool-zone .container .tool-wrap .tool-box {
     position: absolute;
-    
-    
+    transform: translateY(0);
     background-color: plum;
-    
-    
+    display: none;
+    transition: .5s;
 }
 #tool-zone .container .tool-wrap .tool-box.on {
-    
-    
+    transform: translateY(-150px);   
+    display: block; 
+    transition: .5s;
 }
 
 

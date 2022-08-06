@@ -40,8 +40,8 @@ $(function(){
 
 // 툴박스 애니메이션
 $(function(){
-    $('#tool-zone .container .tool-wrap > li').click(function(){
-        $(this).find('.tool-box').toggleClass('on');
+    $('#tool-zone .container .tool-wrap .tool-plus').hover(function(){
+        $('.tool-box').toggleClass('on');
     });
 });
 

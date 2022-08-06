@@ -29,6 +29,15 @@ $(function(){
     })
 });
 
+// 토글메뉴의 메뉴 슬라이드 애니메이션
+$(function(){
+    $('#toggle-gnb > li').hover(function(){
+        $(this).find('.sub').stop().slideDown();
+    },function(){
+        $(this).find('.sub').stop().slideUp();
+    });
+});
+
 
 // 스크롤좌표값 구하기
 $(function () {

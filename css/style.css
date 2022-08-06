@@ -15,7 +15,6 @@
 
 #header .container {
     height: var(--header-height);
-
     position: relative;
 }
 
@@ -129,7 +128,7 @@
 #toggle-menu.on {
     display: block;
     transform: translateX(0);
-    /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 9999px; */
+    /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */
 }
 
 /* 토글메뉴 로그인섹션 */
@@ -215,6 +214,38 @@
     color: #fff;
 }
 
+/* 툴박스 */
+#tool-zone {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+#tool-zone .container {
+    position: relative;
+}
+#tool-zone .container .tool-wrap {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+    background-color: pink;
+}
+
+#tool-zone .container .tool-wrap .tool-box {
+    position: absolute;
+    
+    
+    background-color: plum;
+    
+    
+}
+#tool-zone .container .tool-wrap .tool-box.on {
+    
+    
+}
+
 
 
 
@@ -228,5 +259,4 @@
     z-index: -1;
     width: 100%;
     height: 100vh;
-    background-color: pink;
 }

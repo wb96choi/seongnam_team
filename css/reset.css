@@ -25,6 +25,7 @@ a {
     clear: both;
 }
 .container {
+    /* position: relative; */
     width: 1440px;
     margin: 0 auto;
 }

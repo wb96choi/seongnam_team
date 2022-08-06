@@ -262,3 +262,31 @@
     width: 100%;
     height: 100vh;
 }
+
+
+
+
+
+
+
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px){ 
+    #header {
+        height: var(--header-height-m);
+    }
+    #header .container {
+        position: relative;
+    }
+    #header .container .logo img {
+        width: 68px;
+    }
+    #header-gnb {
+        
+    }
+    #toggle-menu-btn {
+        position: absolute;
+        right: 0;
+        z-index: 10px;
+    }
+    
+}

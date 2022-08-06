@@ -119,11 +119,12 @@
     right: 0;
     top: var(--header-height);
     width: 600px;
-    min-height: 1024px;
+    height: 300vh;
     background-color: #fff;
     /* 많이축소하면 보임 ㅎㅎ.. */
     transform: translateX(200%);
     transition: .5s;
+    overflow-y: scroll;
 }
 #toggle-menu.on {
     display: block;

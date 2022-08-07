@@ -8,14 +8,17 @@ $(function(){
 });
 
 // 스크롤 업다운감지해서 헤더 숨기기
-$(window).bind('mousewheel', function (event) {
-    if (event.originalEvent.wheelDelta >= 0) {
-        // console.log('Scroll up');
-        $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(0)');
-    } else {
-        // console.log('Scroll down');
-        $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(-100%)');
-    }
+$(function(){
+    $(window).bind('mousewheel', function (event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            // console.log('Scroll up');
+            $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(0)');
+        } else {
+            // console.log('Scroll down');
+            $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(-100%)');
+        }
+    });
+    
 });
 
 // 토글메뉴버튼 애니메이션
@@ -35,6 +38,13 @@ $(function(){
         $(this).find('.sub').stop().slideDown();
     },function(){
         $(this).find('.sub').stop().slideUp();
+    });
+});
+
+// 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
+$(function(){
+    $('#toggle-gnb > li > .gnb-plus').click(function(){
+        $(this).find('.sub').stop().slideDown();
     });
 });
 

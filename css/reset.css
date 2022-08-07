@@ -20,16 +20,21 @@ a {
     text-decoration: none;
     color: inherit;
 }
+button {
+    border-style: none;
+    background-color: transparent;
+}
 .clearfix:after {
     display: block;
     content: "";
     clear: both;
 }
 .container {
-    /* position: relative; */
+    /* outline: 5px solid red; */
     width: 1440px;
     margin: 0 auto;
 }
+
 #login-btn {
     cursor: pointer;
     background-color: var(--main-color);
@@ -49,4 +54,27 @@ a {
 }
 .login-sns > button:hover {
     background-color: #ccc;
+}
+
+
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px) {
+
+   .container {
+        width: 375px;
+        margin: 0 auto;
+   }
+
+   #login-btn {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-style: none;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+}
+#login-btn > img {
+    width: 35px;
+}
+
 }

@@ -1,4 +1,3 @@
-
 /* #main-home--------- */
 #main-home {
     width: 100%;
@@ -12,6 +11,7 @@
     background-color: #111;
     position: relative;
 }
+
 #main-home .left-curtain .title-ment {
     top: 0;
     left: 0;
@@ -21,6 +21,7 @@
     margin-top: 400px;
     margin-left: 300px;
 }
+
 #main-home .right-curtain {
     position: absolute;
     top: 0;
@@ -37,9 +38,37 @@
     height: calc(100vh - (var(--header-height)));
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 #show .swiper {
     width: 80%;
     height: 100%;
 }
 
 
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px) {
+
+    /* #main-home--------- */
+    #main-home .left-curtain {
+        width: 100vw;
+        height: 100%;
+        background-color: #111;
+        position: relative;
+    }
+
+    #main-home .left-curtain .title-ment {
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-size: 40px;
+
+        margin-top: 400px;
+        margin-left: 20px;
+    }
+
+    #main-home .right-curtain {
+        display: none;
+    }
+
+
+}

@@ -81,36 +81,38 @@
     right: 33px;
     top: 33px;
 }
+
 .hamburger .line {
-	width: 50px;
-	height: 5px;
-	background-color: #ecf0f1;
-	display: block;
-	margin: 8px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .hamburger:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
+
 .hamburger.active .line:nth-child(2) {
-	opacity: 0;
+    opacity: 0;
 }
 
 .hamburger.active .line:nth-child(1) {
-	-webkit-transform: translateY(13px) rotate(45deg);
-	-ms-transform: translateY(13px) rotate(45deg);
-	-o-transform: translateY(13px) rotate(45deg);
-	transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
 }
 
 .hamburger.active .line:nth-child(3) {
-	-webkit-transform: translateY(-13px) rotate(-45deg);
-	-ms-transform: translateY(-13px) rotate(-45deg);
-	-o-transform: translateY(-13px) rotate(-45deg);
-	transform: translateY(-13px) rotate(-45deg);
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
 }
 
 /* 헤더 토글메뉴 */
@@ -119,13 +121,14 @@
     right: 0;
     top: var(--header-height);
     width: 600px;
-    height: 300vh;
+    height: 130vh;
     background-color: #fff;
     /* 많이축소하면 보임 ㅎㅎ.. */
     transform: translateX(200%);
     transition: .5s;
-    overflow-y: scroll;
+    z-index: 9;
 }
+
 #toggle-menu.on {
     display: block;
     transform: translateX(0);
@@ -145,6 +148,7 @@
     color: #000;
     font-size: 14px;
 }
+
 #toggle-menu .login-section .login-box input {
     display: block;
     margin-bottom: 5px;
@@ -153,16 +157,19 @@
     height: 35px;
     padding-left: 20px;
 }
+
 #toggle-menu .login-section .login-box #login-btn {
     position: absolute;
     top: 63px;
     right: 112px;
 }
+
 #toggle-menu .login-section .login-info {
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
 }
+
 #toggle-menu .login-section .login-sns {
     margin: 53px auto;
     width: 200px;
@@ -179,38 +186,52 @@
     margin: 30px auto;
     text-align: center;
 }
-#toggle-gnb > li {
+
+#toggle-gnb>li {
     width: 100%;
     border-bottom: 1px solid black;
+    position: relative;
 }
-#toggle-gnb > li > a {
+#toggle-gnb>li .gnb-plus {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#toggle-gnb>li>a {
     width: 100%;
     height: 80px;
     line-height: 80px;
     display: block;
 }
-#toggle-gnb > li > a:hover {
+
+#toggle-gnb>li>a:hover {
     background-color: #eaeaea;
 }
-#toggle-gnb > li > .sub {
+
+#toggle-gnb>li>.sub {
     width: 100%;
     background-color: #eaeaea;
 
     display: none;
 }
-#toggle-gnb > li > .sub > li {
+
+#toggle-gnb>li>.sub>li {
     margin: 0 auto;
     width: 90%;
     height: 80px;
     line-height: 80px;
     border-bottom: 1px solid black;
 }
-#toggle-gnb > li > .sub > li > a {
+
+#toggle-gnb>li>.sub>li>a {
     width: 100%;
     height: 100%;
     display: block;
 }
-#toggle-gnb > li > .sub > li > a {
+
+#toggle-gnb>li>.sub>li>a {
     background-color: #eaeaea;
     color: #fff;
 }
@@ -222,9 +243,11 @@
     width: 100%;
     z-index: 10;
 }
+
 #tool-zone .container {
     position: relative;
 }
+
 #tool-zone .container .tool-wrap {
     position: absolute;
     width: 150px;
@@ -243,9 +266,10 @@
     display: none;
     transition: .5s;
 }
+
 #tool-zone .container .tool-wrap .tool-box.on {
-    transform: translateY(-150px);   
-    display: block; 
+    transform: translateY(-150px);
+    display: block;
     transition: .5s;
 }
 
@@ -271,23 +295,169 @@
 
 
 /* 모바일 레이아웃 */
-@media only screen and (max-width: 375px){ 
+@media only screen and (max-width: 375px) {
     #header {
         height: var(--header-height-m);
     }
+
     #header .container {
         position: relative;
     }
+
+    #header .container .logo {
+        position: absolute;
+    }
+
     #header .container .logo img {
         width: 68px;
     }
-    #header-gnb {
-        
-    }
+
+    #header-gnb {}
+
+    /* 헤더 토글버튼 */
     #toggle-menu-btn {
         position: absolute;
-        right: 0;
-        z-index: 10px;
+        right: 23px;
+        top: 15px;
+    }
+
+    .hamburger .line {
+        width: 24px;
+        height: 2px;
+    }
+    .hamburger.active .line:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
     }
     
+    .hamburger.active .line:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* 헤더 토글메뉴 */
+    #toggle-menu {
+        position: absolute;
+        right: 0;
+        top: var(--header-height-m);
+        width: 375px;
+        height: 130vh;
+        background-color: #fff;
+        /* 많이축소하면 보임 ㅎㅎ.. */
+        transform: translateY(-200%);
+        transition: .5s;
+        z-index: 9;
+    }
+
+    #toggle-menu.on {
+        display: block;
+        transform: translatey(0);
+        /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */
+    }
+
+    /* 토글메뉴 로그인섹션 */
+    #toggle-menu .login-section {
+        position: relative;
+        width: 100%;
+        height: 182px;
+        border: .5px solid #333;
+        /* padding 상 우 하 좌 */
+        padding: 30px 57px 20px 57px;
+        font-size: 10px;
+    }
+
+    #toggle-menu .login-section .login-box input {
+        display: block;
+        margin-bottom: 1px;
+        border: 1.5px solid black;
+        width: 192px;
+        height: 28px;
+        padding-left: 20px;
+    }
+
+    #toggle-menu .login-section .login-box #login-btn {
+        position: absolute;
+        top: 30px;
+        right: 57px;
+    }
+
+    #toggle-menu .login-section .login-info {
+        margin-top: 11px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #toggle-menu .login-section .login-sns {
+        margin: 19px auto;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 토글메뉴의 메뉴 */
+    #toggle-menu #toggle-gnb {
+        color: #000;
+        background-color: #fff;
+        width: 315px;
+        font-size: 20px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    #toggle-gnb>li {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    #toggle-gnb>li .gnb-plus {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    #toggle-gnb>li>a {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+    }
+
+    #toggle-gnb>li>a:hover {
+        background-color: #eaeaea;
+    }
+
+    #toggle-gnb>li>.sub {
+        width: 100%;
+        background-color: #eaeaea;
+
+        display: none;
+    }
+
+    #toggle-gnb>li>.sub>li {
+        margin: 0 auto;
+        width: 90%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid black;
+    }
+
+    #toggle-gnb>li>.sub>li>a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #toggle-gnb>li>.sub>li>a {
+        background-color: #eaeaea;
+        color: #fff;
+    }
+
+
+
+
+
 }

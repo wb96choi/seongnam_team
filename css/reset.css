@@ -40,8 +40,8 @@ button {
     background-color: var(--main-color);
     border-style: none;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 .login-sns > button {
     cursor: pointer;

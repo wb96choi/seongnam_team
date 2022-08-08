@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('main.css');
+@import url('background-youtube.css');
 
 
 /* 헤더와 푸터 백그라운드동영상 */
@@ -50,6 +51,7 @@
 
 .gnb>li:hover {
     background-color: #000;
+    /* color: var(--main-color); */
 }
 
 .gnb>li>a {
@@ -60,6 +62,7 @@
     position: absolute;
     width: 100%;
     display: none;
+    background-color: #000;
 }
 
 .gnb>li>.sub>li {
@@ -67,8 +70,9 @@
     line-height: 50px;
 }
 
-.gnb>li>.sub>li:hover {
-    background-color: #000;
+.gnb>li>.sub>li:hover a {
+    background-color: rgba(102, 102, 102, 0.5);
+    /* color: var(--main-color); */
 }
 
 .gnb>li>.sub>li>a {
@@ -276,17 +280,6 @@
 
 
 
-
-
-/* 백그라운드 동영상 */
-#background-youtube {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-}
 
 
 

@@ -2,6 +2,7 @@
     --header-height: 100px;
     --header-height-m: 60px;
     --main-color: #000066;
+    
 }
 
 * {
@@ -23,6 +24,12 @@ a {
 button {
     border-style: none;
     background-color: transparent;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 70px;
 }
 .clearfix:after {
     display: block;

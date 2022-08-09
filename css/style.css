@@ -198,6 +198,7 @@
     border-bottom: 1px solid black;
     position: relative;
 }
+
 #toggle-gnb>li .gnb-plus {
     display: none;
     position: absolute;
@@ -242,64 +243,60 @@
     color: #fff;
 }
 
-/* 툴박스 */
-#tool-zone {
-    position: fixed;
-    bottom: 0;
+
+
+
+
+
+
+
+
+
+
+footer {
     width: 100%;
-    z-index: 10;
+    height: 245px;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Noto Sans Korean", sans-serif;
+    font-size: 14px;
+    /*피그마와 같이주면 1000픽셀쯤부터 찌그러짐.*/
+    /*padding: 0 355px;*/
 }
 
-#tool-zone .container {
-    position: relative;
-}
-
-#tool-zone .container .tool-wrap {
-    position: absolute;
-    width: 50px;
-    height: 186px;
-    right: 36px;
-    bottom: 144px;
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#tool-zone .container .tool-wrap > li {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    right: 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#tool-zone .container .tool-wrap > li a {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-/* 검색바 */
-#tool-zone .container .tool-wrap .search {
-    transition: .5s;
-position: fixed;
-}
-#tool-zone .container .tool-wrap .search .search-bar {
+footer .logo {
     display: none;
 }
-#tool-zone .container .tool-wrap .search.on {
-    width: 20vw;
-    border-radius: 50px;
-    transition: .5s;
+
+footer .secret {
+    padding: 25px 0 20px 0;
+    font-weight: 500;
 }
 
+footer .secret span {
+    padding-left: 25px;
+}
 
+footer .secret .ccc {
+    color: rgba(255, 255, 255, 0.5);
+}
 
+footer .address p {
+    font-weight: 400;
+    padding-bottom: 25px;
+}
 
+footer .sns-pro img {
+    padding: 0 0 25.5px 20px;
+}
 
-
+footer .copyright {
+    font-weight: 400;
+    line-height: 23px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -307,6 +304,8 @@ position: fixed;
 
 /* 모바일 레이아웃 */
 @media only screen and (max-width: 375px) {
+
+    /* 헤더 */
     #header {
         height: var(--header-height-m);
     }
@@ -336,13 +335,14 @@ position: fixed;
         width: 24px;
         height: 2px;
     }
+
     .hamburger.active .line:nth-child(1) {
         -webkit-transform: translateY(10px) rotate(45deg);
         -ms-transform: translateY(10px) rotate(45deg);
         -o-transform: translateY(10px) rotate(45deg);
         transform: translateY(10px) rotate(45deg);
     }
-    
+
     .hamburger.active .line:nth-child(3) {
         -webkit-transform: translateY(-10px) rotate(-45deg);
         -ms-transform: translateY(-10px) rotate(-45deg);
@@ -423,6 +423,7 @@ position: fixed;
         width: 100%;
         border-bottom: 1px solid black;
     }
+
     #toggle-gnb>li .gnb-plus {
         display: block;
         position: absolute;
@@ -471,4 +472,65 @@ position: fixed;
 
 
 
+
+
+    /* 푸터 */
+    footer {
+        width: 100%;
+        height: 383px;
+        background: #000;
+        color: #fff;
+        margin: 0 auto;
+        padding: 20px;
+        /*text-align: left;*/
+        font-family: "Noto Sans Korean", sans-serif;
+        font-size: 12px;
+    }
+
+    footer .logo img {
+        width: 80px;
+    }
+
+    footer .secret {
+        padding: 20px 0 25px 0;
+        font-weight: 500;
+    }
+
+    footer .secret span {
+        padding-right: 10px;
+        /*font-size: 12px;*/
+    }
+
+    footer .secret .ccc {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    footer .address p {
+        font-weight: 400;
+        padding-bottom: 35px;
+        /*font-size: 16px;*/
+    }
+
+    footer #line {
+        border-bottom: 1px solid;
+    }
+
+    footer .sns {
+        padding-top: 20px;
+    }
+
+    footer .sns-pro {
+        text-align: center;
+    }
+
+    footer .sns-pro img {
+        padding: 0 20px 25.5px 0;
+    }
+
+    footer .copyright {
+        font-weight: 400;
+        /*line-height: 23px;*/
+        padding-bottom: 30px;
+        font-size: 10px;
+    }
 }

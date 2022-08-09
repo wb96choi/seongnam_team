@@ -38,10 +38,18 @@ $(function(){
 
 // 검색바 뿅 
 $(function(){
-    $('#tool-zone .container .tool-wrap .search-bar').click(function(){
-        $(this).toggleClass('on')
+    $('#tool-zone .container .tool-wrap .search').click(function(){
+        $('#tool-zone .container .tool-wrap .search-bar').toggleClass('on')
     })
 });
+
+// 탑버튼 
+$(function(){
+    $('.top').click(function(){
+        $('html, body').animate({scrollTop:0},400);
+        return false;
+    });
+})
 
 // 스크롤좌표값 구하기
 $(function () {
@@ -51,7 +59,7 @@ $(function () {
         console.log(scrollposition);
 
 
-        // 300 이 넘으면
+        // 300 이 넘으면 커튼이 열려요
         if (scrollposition >= 300) {
             $('.left-curtain').css('transition-duration', '3s').css('transform',
                 'translateX(-100%)');
@@ -62,6 +70,13 @@ $(function () {
                 'translateX(0)');
             $('.right-curtain').css('transition-duration', '3s').css('transform',
                 'translateX(0)');
+        }
+
+
+        if (scrollposition >= 2000) {
+           $('#tool-zone').addClass('on');
+        } else {
+            $('#tool-zone').removeClass('on');
         }
     });
 });
@@ -89,4 +104,35 @@ $(function(){
           el: '.swiper-scrollbar',
         },
     });
+});
+
+
+
+
+// footer 
+$(function(){
+        //instagram hover
+        $("#insta").hover(
+            function() {$(this).attr("src","images/instagram_2.png");
+            },
+            function() {$(this).attr("src","images/instagram.png"); 
+        });
+        //youtube hover
+        $("#youtube").hover(
+            function() {$(this).attr("src","images/youtube_2.png");
+            },
+            function() {$(this).attr("src","images/youtube.png"); 
+        });
+        //kakao hover
+        $("#kakaotalk").hover(
+            function() {$(this).attr("src","images/kakao_2.png");
+            },
+            function() {$(this).attr("src","images/kakao.png"); 
+        });
+        //naver hover
+        $("#naver").hover(
+            function() {$(this).attr("src","images/navrer_1.png");
+            },
+            function() {$(this).attr("src","images/navrer.png"); 
+        });
 });

@@ -122,6 +122,11 @@
 }
 
 /* 헤더 토글메뉴 */
+
+body {
+    width: 100vw;
+    overflow: hidden;
+}
 #toggle-menu {
     position: absolute;
     right: 0;

@@ -1,4 +1,4 @@
-// 스크롤좌표값 구하기
+// 스크롤좌표값 구하기 (모바일)
 $(function () {
     $(window).scroll(function () {
         // scrollposition이 현재 스크롤 좌표임

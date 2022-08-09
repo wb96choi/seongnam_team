@@ -363,7 +363,7 @@ footer .copyright {
         width: 375px;
         height: 130vh;
         background-color: #fff;
-        /* 많이축소하면 보임 ㅎㅎ.. */
+        
         transform: translateY(-200%);
         transition: .5s;
         z-index: 9;

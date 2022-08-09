@@ -160,7 +160,7 @@
         position: absolute;
         font-size: 40px;
 
-        margin-top: 400px;
+        margin-top: 200px;
         margin-left: 20px;
     }
 
@@ -168,5 +168,18 @@
         display: none;
     }
 
+
+    /* 툴박스 */
+    #tool-zone .container .tool-wrap {
+        position: absolute;
+        width: 50px;
+        height: 186px;
+        right: 27px;
+        bottom: 144px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
 }

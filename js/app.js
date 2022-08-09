@@ -78,6 +78,8 @@ $(function () {
         } else {
             $('#tool-zone').removeClass('on');
         }
+
+        
     });
 });
 

@@ -134,15 +134,18 @@ body {
     right: 0;
     top: var(--header-height);
     width: 600px;
-    height: 130vh;
+    height: calc(100vh - 100px);
     background-color: #fff;
     /* 많이축소하면 보임 ㅎㅎ.. */
     transform: translateX(200%);
     transition: .5s;
     z-index: 9;
+    
 }
 
 #toggle-menu.on {
+    position: fixed;
+    overflow: scroll;
     display: block;
     transform: translateX(0);
     /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */

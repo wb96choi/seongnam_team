@@ -7,19 +7,7 @@ $(function(){
         });
 });
 
-// 스크롤 업다운감지해서 헤더 숨기기
-$(function(){
-    $(window).bind('mousewheel', function (event) {
-        if (event.originalEvent.wheelDelta >= 0) {
-            // console.log('Scroll up');
-            $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(0)');
-        } else {
-            // console.log('Scroll down');
-            $('#header').css('transition-duration', '0.5s').css('transform', 'translateY(-100%)');
-        }
-    });
-    
-});
+
 
 // 토글메뉴버튼 애니메이션
 $(function(){
@@ -48,11 +36,11 @@ $(function(){
     });
 });
 
-// 툴박스 애니메이션
+// 검색바 뿅 
 $(function(){
-    $('#tool-zone .container .tool-wrap .tool-plus').hover(function(){
-        $('.tool-box').toggleClass('on');
-    });
+    $('#tool-zone .container .tool-wrap .search-bar').click(function(){
+        $(this).toggleClass('on')
+    })
 });
 
 // 스크롤좌표값 구하기

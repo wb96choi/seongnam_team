@@ -4,7 +4,7 @@ body {
 	background-color: #000;
 }
 
-h1 {
+#rental h1 {
 	font-weight: 700;
 	font-size: 40px;
 	position: absolute;
@@ -53,7 +53,7 @@ h1 {
 	top: 108px;
 }
 
-h2 {
+#rental h2 {
 	position: absolute;
 	left: 180px;
 	top: 198px;

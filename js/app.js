@@ -123,6 +123,12 @@ $(function () {
     });
 });
 
+// exhibition 전시 섹션 AOS 
+$(function(){
+
+  AOS.init();
+
+})
 
 
 

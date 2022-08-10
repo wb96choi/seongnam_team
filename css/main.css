@@ -214,7 +214,7 @@
     position: absolute;
     width: 40vw;
     height: 400px;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     display: flex;
     justify-content: space-between;
 }
@@ -248,6 +248,11 @@
     top: 1600px;
     left: 0;
 }
+#exhibition .ex-gallery .img-even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 /* 대관안내 */
 #rental {

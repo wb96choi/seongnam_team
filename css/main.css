@@ -190,7 +190,7 @@
 #exhibition {
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
-    height: calc(100vh + 200px);
+    height: calc(330vh + 200px);
     padding-top: 200px;
 
     display: flex;
@@ -198,20 +198,25 @@
     justify-content: center;
     position: relative;
 }
+#exhibition > .blur-filter {
+    height: calc(330vh + 200px);
+}
 
 
 #exhibition .ex-gallery {
     width: 80%;
     height: 80%;
     position: relative;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 #exhibition .ex-gallery .imgbox {
     position: absolute;
-    width: 200px;
+    width: 40vw;
     height: 400px;
     outline: 3px solid red;
+    display: flex;
+    justify-content: space-between;
 }
 
 #exhibition .ex-gallery .imgbox img {
@@ -220,28 +225,28 @@
 }
 
 #exhibition .ex-gallery .img-1 {
-    top: 20px;
-    left: 100px;
+    top: 0;
+    left: 0;
 }
 
 #exhibition .ex-gallery .img-2 {
-    top: 50px;
-    left: 300px;
+    top: 400px;
+    right: 0;
 }
 
 #exhibition .ex-gallery .img-3 {
-    top: 10px;
-    left: 50px;
+    top: 800px;
+    left: 0;
 }
 
 #exhibition .ex-gallery .img-4 {
-    top: 60px;
-    left: 500px;
+    top: 1200px;
+    right: 0;
 }
 
 #exhibition .ex-gallery .img-5 {
-    top: 100px;
-    left: 900px;
+    top: 1600px;
+    left: 0;
 }
 
 /* 대관안내 */
@@ -603,8 +608,8 @@
 
     #exhibition .ex-gallery .imgbox {
         position: absolute;
-        width: 200px;
-        height: 400px;
+        width: 20px;
+        height: 40px;
         outline: 3px solid red;
     }
 
@@ -638,6 +643,160 @@
         left: 0px;
     }
 
+
+    /* 대관안내 */
+#rental {
+    width: 100%;
+    /* 101px은 .main-title의 높이값임 */
+    height: calc(100vh + 200px);
+    /* padding-top: 200px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    overflow: hidden;
+}
+#rental > .main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    /* line-height: 200px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(5px); */
+    color: #fff;
+    text-align: center;
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rental .rental-gallery {
+    width: 80%;
+    height: 80%;
+}
+#rental .rental-gallery {
+	position: relative;
+	font-family: 'Helvetica Neue', sans-serif;
+	perspective: 1400px;
+	transform-style: preserve-3d;
+}
+
+#rental .rental-gallery input[type=radio] {
+	position: relative;
+	top: 60%;
+	left: 60%;
+	width: 18px;
+	height: 18px;
+	margin: 0 15px 0 0;
+	opacity: 0;
+	transform: translateX(-83px);
+	cursor: pointer;
+}
+
+
+#rental .rental-gallery input[type=radio]:nth-child(3) {
+	margin-right: 0px;
+}
+
+#rental .rental-gallery input[type=radio]:checked {
+	opacity: 0;
+    display: none;
+}
+
+
+#rental .rental-gallery label,
+#rental .rental-gallery label img {
+	position: absolute;
+	/* width: 380px;
+	height: 800px; */
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 400ms ease;
+}
+#rental .rental-gallery label {
+    width: 226px;
+    height: 475px;
+    top: 10%;
+    left: 40%;
+    /* transform: translateX(-50%); */
+}
+#rental .rental-gallery label img {
+    width: 226px;
+    height: 475px;
+}
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3 {
+	box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+	transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide1 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(70%, 0, -100px);
+}
+
+/* Previous Slide */
+#s1:checked~#slide3,
+#s2:checked~#slide1,
+#s3:checked~#slide2 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(-70%, 0, -100px);
+}
+
+.click-modal {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	/* outline: 4px solid green; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6)
+}
+
+.click-modal a {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.click-modal a:hover {
+	background: #fff;
+	color: black;
+}
+
+.click-modal > p {
+	font-size: 1vw;
+    text-align: center;
+}
+
+.click-modal span {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+}
 
     /* info */
 #info {

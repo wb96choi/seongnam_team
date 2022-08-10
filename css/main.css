@@ -190,7 +190,7 @@
 #exhibition {
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
-    height: calc(330vh + 200px);
+    height: calc(430vh + 200px);
     padding-top: 200px;
 
     display: flex;
@@ -199,7 +199,7 @@
     position: relative;
 }
 #exhibition > .blur-filter {
-    height: calc(330vh + 200px);
+    height: calc(430vh + 200px);
 }
 
 
@@ -276,11 +276,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     /* filter: blur(5px); */
     color: #fff;
-    text-align: center;
-    /* z-index: -1; */
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+#rental > .main-title h1 {
+    font-weight: 700;
+	font-size: 40px;
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+	top: 30px;
 }
 #rental .rental-gallery {
     width: 80%;

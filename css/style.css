@@ -393,6 +393,7 @@ footer .copyright {
     }
 
     #header .container {
+        width: 375px;
         position: relative;
     }
 
@@ -495,7 +496,7 @@ footer .copyright {
         width: calc(375px / 3);
         height: 44px;
         left: 0px;
-        top: 138px;
+        top: 137px;
         bottom: 0;
         border-top: 0.5px solid #111111;
         border-right: 0.5px solid #111111;
@@ -509,7 +510,7 @@ footer .copyright {
         width: calc(375px / 3);
         height: 44px;
         left: 125px;
-        top: 138px;
+        top: 137px;
         border-top: 0.5px solid #111111;
         border-right: 0.5px solid #111111;
         display: flex;
@@ -522,7 +523,7 @@ footer .copyright {
         width: calc(375px / 3);
         height: 44px;
         left: 250px;
-        top: 138px;
+        top: 137px;
         border-top: 0.5px solid #111111;
         display: flex;
         align-items: center;

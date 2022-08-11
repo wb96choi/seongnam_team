@@ -628,6 +628,9 @@
     #exhibition>.blur-filter {
         height: calc(330vh + 100px);
     }
+    #exhibition {
+        /* dhodkseho */
+    }
 
 
     #exhibition .ex-gallery {

@@ -186,11 +186,11 @@ $(function () {
 })
 
 // 대관안내 모달 
-$(function () {
-    $('#rental .rental-gallery label .click-modal .rental-detail').click(function () {
-        $('#rental .rental-modal').addClass('on')
+$(function(){
+    $('#rental #slider label .click-modal .rental-detail').click(function(){
+        $('.rental-modal').addClass('on')
     });
-    $('#rental .rental-modal > header #close-btn').click(function () {
+    $('#rental .rental-modal #close-btn').click(function(){
         $('#rental .rental-modal').removeClass('on')
     });
 });

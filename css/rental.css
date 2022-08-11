@@ -2,12 +2,10 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 	color: #fff;
 	background-color: #000;
-}
-#rental {
 	margin-top: 100px;
-	position: relative;
 }
-#rental h1 {
+
+#rental > h1 {
 	font-weight: 700;
 	font-size: 40px;
 	position: absolute;
@@ -15,11 +13,14 @@ body {
 	top: 30px;
 }
 
-
 .container {
 	position: relative;
 	width: 1440px;
 	margin: 0 auto;
+}
+
+#rental {
+	z-index: 0;
 }
 
 #rental .page a {
@@ -81,17 +82,13 @@ body {
 	left: 742px;
 	top: 264px;
 }
-#rental-btn {
-	position: absolute;
-	text-align: center;
-	line-height: 50px;
 
-	left: 1150px;
-	top: 160px;
-}
 #rental .container>a {
+	position: absolute;
 	width: 180px;
 	height: 50px;
+	right: 178px;
+	top: 194px;
 	background: #D9D9D9;
 	color: #000;
 	border-radius: 10px;

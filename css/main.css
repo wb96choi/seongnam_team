@@ -628,9 +628,6 @@
     #exhibition>.blur-filter {
         height: calc(330vh + 100px);
     }
-    #exhibition {
-        /* dhodkseho */
-    }
 
 
     #exhibition .ex-gallery {
@@ -775,14 +772,14 @@
         width: 80px;
         height: 150px;
         top: 40%;
-        /* left: 20%;  */
+        left: 35%; 
         margin: 0 auto;
         /* transform: translateX(-50%); */
     }
 
     #rental .rental-gallery label img {
-        width: 226px;
-        height: 475px;
+        width: 150px;
+        height: 250px;
     }
 
 

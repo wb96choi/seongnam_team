@@ -186,12 +186,53 @@ $(function () {
 })
 
 // 대관안내 모달 
-$(function(){
-    $('#rental #slider label .click-modal .rental-detail').click(function(){
-        $('.rental-modal').addClass('on')
+$(function () {
+    $('#rental #slider label .click-modal .rental-detail-opera').click(function () {
+        $('.rental-modal-opera').addClass('on')
     });
-    $('#rental .rental-modal #close-btn').click(function(){
-        $('#rental .rental-modal').removeClass('on')
+    $('#rental .rental-modal-opera #close-btn').click(function () {
+        $('#rental .rental-modal-opera').removeClass('on')
+    });
+
+    $('#rental #slider label .click-modal .rental-detail-concert').click(function () {
+        $('.rental-modal-concert').addClass('on')
+    });
+    $('#rental .rental-modal-concert #close-btn').click(function () {
+        $('#rental .rental-modal-concert').removeClass('on')
+    });
+
+    $('#rental #slider label .click-modal .rental-detail-ensemble').click(function () {
+        $('.rental-modal-ensemble').addClass('on')
+    });
+    $('#rental .rental-modal-ensemble #close-btn').click(function () {
+        $('#rental .rental-modal-ensemble').removeClass('on')
+    });
+});
+
+// 대관안내페이지 탭버튼
+$(function () {
+    $('.rental-page-opera-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-ensemble').removeClass('on');
+        $('#rental-page-concert').removeClass('on');
+        // 표시
+        $('#rental-page-opera').removeClass('on');
+    });
+
+    $('.rental-page-concert-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-opera').addClass('on');
+        $('#rental-page-ensemble').removeClass('on');
+        // 표시
+        $('#rental-page-concert').addClass('on');
+    });
+
+    $('.rental-page-ensemble-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-concert').removeClass('on');
+        $('#rental-page-opera').addClass('on');
+        // 표시
+        $('#rental-page-ensemble').addClass('on');
     });
 });
 

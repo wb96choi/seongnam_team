@@ -418,8 +418,8 @@ input[type=radio]:checked {
     font-size: 1.5vw;
 }
 
-/* rental modal */
-#rental .rental-modal {
+/* rental modal opera */
+#rental .rental-modal-opera {
     position: fixed;
     display: none;
     width: 950px;
@@ -431,11 +431,11 @@ input[type=radio]:checked {
     color: #000;
 }
 
-#rental .rental-modal.on {
+#rental .rental-modal-opera.on {
     display: block;
 }
 
-#rental .rental-modal h1 {
+#rental .rental-modal-opera h1 {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -444,13 +444,13 @@ input[type=radio]:checked {
     line-height: 58px;
 }
 
-#rental .rental-modal #close-btn {
+#rental .rental-modal-opera #close-btn {
     position: absolute;
     right: 40px;
     top: 40px;
 }
 
-#rental .rental-modal>article {
+#rental .rental-modal-opera>article {
     width: 822px;
     height: 355px;
     /* outline: 1px solid black; */
@@ -460,39 +460,224 @@ input[type=radio]:checked {
     justify-content: space-between;
 }
 
-#rental .rental-modal>article .rental-img {
+#rental .rental-modal-opera>article .rental-img {
     width: 421px;
     height: 355px;
-    background-image: url('../images/ensemble.png');
+    background-image: url('../images/opera02.png');
     background-repeat: no-repeat;
     background-position: left;
 }
 
-#rental .rental-modal>article .rental-info {
+#rental .rental-modal-opera>article .rental-info-opera {
     width: 397px;
 }
 
-#rental .rental-modal>article .rental-info .title {
+#rental .rental-modal-opera>article .rental-info-opera .title {
     font-size: 22px;
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 15px;
 }
 
-#rental .rental-modal>article .rental-info .sub-title {
+#rental .rental-modal-opera>article .rental-info-opera .sub-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 23px;
     margin-bottom: 12px;
 }
 
-#rental .rental-modal>article .rental-info .rental-info-text {
+#rental .rental-modal-opera>article .rental-info-opera .rental-info-text {
     font-size: 12px;
     font-weight: 500;
     line-height: 17px;
 }
 
-#rental-btn {
+#rental-btn-opera {
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/* rental modal concert */
+#rental .rental-modal-concert {
+    position: fixed;
+    display: none;
+    width: 950px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+
+#rental .rental-modal-concert.on {
+    display: block;
+}
+
+#rental .rental-modal-concert h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+#rental .rental-modal-concert #close-btn {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+#rental .rental-modal-concert>article {
+    width: 822px;
+    height: 355px;
+    /* outline: 1px solid black; */
+    margin-left: 50px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rental .rental-modal-concert>article .rental-img {
+    width: 421px;
+    height: 355px;
+    background-image: url('../images/consert02.jpeg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#rental .rental-modal-concert>article .rental-info-concert {
+    width: 397px;
+}
+
+#rental .rental-modal-concert>article .rental-info-concert .title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+#rental .rental-modal-concert>article .rental-info-concert .sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+#rental .rental-modal-concert>article .rental-info-concert .rental-info-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+#rental-btn-concert {
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+/* rental modal ensemble */
+#rental .rental-modal-ensemble {
+    position: fixed;
+    display: none;
+    width: 950px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+
+#rental .rental-modal-ensemble.on {
+    display: block;
+}
+
+#rental .rental-modal-ensemble h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+#rental .rental-modal-ensemble #close-btn {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+#rental .rental-modal-ensemble>article {
+    width: 822px;
+    height: 355px;
+    /* outline: 1px solid black; */
+    margin-left: 50px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rental .rental-modal-ensemble>article .rental-img {
+    width: 421px;
+    height: 355px;
+    background-image: url('../images/ensemble01.jpeg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#rental .rental-modal-ensemble>article .rental-info-ensemble {
+    width: 397px;
+}
+
+#rental .rental-modal-ensemble>article .rental-info-ensemble .title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+#rental .rental-modal-ensemble>article .rental-info-ensemble .sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+#rental .rental-modal-ensemble>article .rental-info-ensemble .rental-info-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+#rental-btn-ensemble {
     position: absolute;
     width: 220px;
     height: 50px;
@@ -787,10 +972,12 @@ input[type=radio]:checked {
         position: relative;
         /* overflow: hidden; */
     }
+
     .click-modal>p {
-    font-size: 20px;
-    text-align: center;
-}
+        font-size: 20px;
+        text-align: center;
+    }
+
     #slider {
         position: relative;
         width: 35%;
@@ -800,6 +987,7 @@ input[type=radio]:checked {
         perspective: 1400px;
         transform-style: preserve-3d;
     }
+
     #rental>.main-title {
         position: absolute;
         top: 0;

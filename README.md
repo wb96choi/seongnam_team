@@ -12,7 +12,55 @@
 ## 팀 공지사항
 - style.css에 헤더와 메뉴, 그리고 푸터영역 css가 들어가있습니다.
 - index에만 main-header.js 넣어주시고 다른 페이지엔 빼주세요~
-- 모바일버전에서 메인의 대관안내섹션의 사이즈가 줄여지지 않아 토글메뉴버튼이 옆으러ㅗ ㅈ삐져나와
+- 푸터 css변경해주세요
+```c
+footer {
+    width: 100%;
+    height: 275px;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Noto Sans Korean", sans-serif;
+    font-size: 14px;
+    /*피그마와 같이주면 1000픽셀쯤부터 찌그러짐.*/
+    padding-top: 30px;
+}
+```
+- 툴박스(main.css) 변경해주세요
+```c
+#tool-zone {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 8;
+    opacity: 0;
+    background-color: pink;
+    transition: 1s;
+}
+
+#tool-zone.on {
+    opacity: 1;
+    transition: 1s;
+}
+
+#tool-zone .container {
+    position: relative;
+}
+
+#tool-zone .container .tool-wrap {
+    position: absolute;
+    width: 50px;
+    height: 186px;
+    right: 50px;
+    bottom: 50px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+```
+
 
 -----------------
 # 기능 구현

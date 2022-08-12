@@ -1,13 +1,14 @@
 /* #main-home--------- */
 #main-home {
     width: 100%;
-    height: 300vh;
+    height: 200vh;
+    top: -100px;
     position: relative;
 }
 
 #main-home .left-curtain {
     width: 60vw;
-    height: 100%;
+    height: calc(100% + 100px);
     background-color: #111;
     position: relative;
 }
@@ -30,7 +31,7 @@
     top: 0;
     right: 0;
     width: 40vw;
-    height: 100%;
+    height: calc(100% + 100px);
     background-color: #111;
 }
 
@@ -40,8 +41,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 8;
     opacity: 0;
+    background-color: pink;
     transition: 1s;
 }
 
@@ -58,8 +60,8 @@
     position: absolute;
     width: 50px;
     height: 186px;
-    right: 36px;
-    bottom: 144px;
+    right: 50px;
+    bottom: 50px;
     /* background-color: pink; */
     display: flex;
     flex-direction: column;
@@ -270,7 +272,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 #rental>.main-title {
@@ -301,8 +303,8 @@
 
 #slider {
     position: relative;
-    width: 25%;
-    height: 50vw;
+    width: 40%;
+    height: 30vw;
     margin: 150px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
@@ -383,7 +385,7 @@ input[type=radio]:checked {
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 30%;
     /* outline: 4px solid green; */
     display: flex;
     justify-content: center;
@@ -391,18 +393,22 @@ input[type=radio]:checked {
     background: rgba(0, 0, 0, 0.6)
 }
 
-.click-modal .rental-detail {
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.click-modal .rental-detail:hover {
+.click-modal .rental-detail-opera {
     background: #fff;
     color: black;
+    border-radius: 5px;
+}
+
+.click-modal .rental-detail-concert {
+    background: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+.click-modal .rental-detail-ensemble {
+    background: #fff;
+    color: black;
+    border-radius: 5px;
 }
 
 .click-modal>p {
@@ -417,6 +423,9 @@ input[type=radio]:checked {
     align-items: center;
     font-size: 1.5vw;
 }
+
+
+
 
 /* rental modal opera */
 #rental .rental-modal-opera {
@@ -704,7 +713,9 @@ input[type=radio]:checked {
     justify-content: center;
     position: relative;
 }
-
+#info > .blur-filter {
+    background-color: rgba(255, 255, 255);
+}
 
 #info .info-gallery {
     width: 90%;
@@ -736,21 +747,13 @@ input[type=radio]:checked {
     height: 100%;
 }
 
-#info .info-gallery .info-wrap a:hover .opacity-filter,
+
 #info .info-gallery .info-wrap a:hover img {
     transition: .5s;
     transform: scale(1.2);
 
 }
 
-#info .info-gallery .info-wrap a .opacity-filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 #info .info-gallery .info-wrap a h3 {
     position: absolute;
@@ -1115,6 +1118,7 @@ input[type=radio]:checked {
         justify-content: center;
         position: relative;
     }
+    
 
 
     #info .info-gallery {

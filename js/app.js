@@ -87,7 +87,10 @@ $(function () {
 // 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
 $(function () {
     $('#toggle-gnb > li > .gnb-plus').click(function () {
-        $(this).find('.sub').stop().slideDown();
+        $('#toggle-gnb > li').find('.sub').toggle(function(){
+            $('#toggle-gnb > li').find('.sub').stop().slideDown();
+            // $('#toggle-gnb > li').find('.sub').stop().slideUp();
+        });
     });
 });
 

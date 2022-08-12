@@ -60,6 +60,44 @@ footer {
     justify-content: space-between;
 }
 ```
+- 메인 홈화면에 (main.css) 높이값 조절했습니다
+```c
+#main-home {
+    width: 100%;
+    height: 200vh;
+    top: -100px;
+    position: relative;
+}
+
+#main-home .left-curtain {
+    width: 60vw;
+    height: calc(100% + 100px);
+    background-color: #111;
+    position: relative;
+}
+
+#main-home .left-curtain .title-ment {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    margin-top: 400px;
+    margin-left: 300px;
+}
+
+#main-home .left-curtain .title-ment h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+#main-home .right-curtain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: calc(100% + 100px);
+    background-color: #111;
+}
+```
 
 
 -----------------

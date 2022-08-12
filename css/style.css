@@ -572,6 +572,7 @@ footer .copyright {
     #toggle-gnb>li {
         width: 100%;
         border-bottom: 1px solid black;
+        position: relative;
     }
 
     #toggle-gnb>li .gnb-plus {

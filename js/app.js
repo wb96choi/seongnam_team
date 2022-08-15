@@ -382,17 +382,17 @@ $(function () {
     //kakao hover
     $("#kakaotalk").hover(
         function () {
-            $(this).attr("src", "../images/kakao_2.png");
+            $(this).attr("src", "images/kakao_2.png");
         },
         function () {
-            $(this).attr("src", "../images/kakao.png");
+            $(this).attr("src", "images/kakao.png");
         });
     //naver hover
     $("#naver").hover(
         function () {
-            $(this).attr("src", "../images/navrer_1.png");
+            $(this).attr("src", "images/navrer_1.png");
         },
         function () {
-            $(this).attr("src", "../images/navrer.png");
+            $(this).attr("src", "images/navrer.png");
         });
 });

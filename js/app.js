@@ -1,4 +1,4 @@
-// 헤더 메뉴
+// 헤더 메뉴 (모바일만 적용되어야함)
 $(function () {
     $('#header nav .gnb > li').hover(function () {
         $(this).find('.sub').stop().slideDown();
@@ -73,7 +73,7 @@ $(function () {
     } else {
         paintGreeting(saveUserName);
     }
-})
+});
 
 
 
@@ -381,18 +381,18 @@ $(function () {
     //instagram hover
     $("#insta").hover(
         function () {
-            $(this).attr("src", "../images/instagram_2.png");
+            $(this).attr("src", "images/instagram_2.png");
         },
         function () {
-            $(this).attr("src", "../images/instagram.png");
+            $(this).attr("src", "images/instagram.png");
         });
     //youtube hover
     $("#youtube").hover(
         function () {
-            $(this).attr("src", "../images/youtube_2.png");
+            $(this).attr("src", "images/youtube_2.png");
         },
         function () {
-            $(this).attr("src", "../images/youtube.png");
+            $(this).attr("src", "images/youtube.png");
         });
     //kakao hover
     $("#kakaotalk").hover(

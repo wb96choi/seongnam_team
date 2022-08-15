@@ -99,7 +99,13 @@ footer {
     background-color: #111;
 }
 ```
-
+- pc버전 토글메뉴 변경점
+```c
+- app.js에 호버시 .sub내려오는 자바코드를 app_mobile.js로 옮기기
+- app.js에 / /토글메뉴버튼 애니메이션 < 수정
+- mainlayout.html, css 참고하여 코드 수정하기
+- **왠진 모르겠는데 pc토글메뉴창에서 .gnb> li에 호버하면 애니메이션이됨...
+```
 
 -----------------
 # 기능 구현

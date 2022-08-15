@@ -1,13 +1,3 @@
-// 헤더 메뉴 (모바일만 적용되어야함)
-$(function () {
-    $('#header nav .gnb > li').hover(function () {
-        $(this).find('.sub').stop().slideDown();
-    }, function () {
-        $(this).find('.sub').stop().slideUp();
-    });
-});
-
-
 
 // 토글메뉴버튼 애니메이션
 $(function () {
@@ -17,6 +7,10 @@ $(function () {
 
     $('#toggle-menu-btn').click(function () {
         $('#toggle-menu').toggleClass('on');
+        $('#header #header-gnb').toggle(function(){
+            $(this).css({'opacity': '0', 'transition': '.5s' });
+            $(this).css({'opacity': '1', 'transition': '.5s' });
+        })
     })
 });
 
@@ -78,15 +72,6 @@ $(function () {
 
 
 
-// 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
-$(function () {
-    $('#toggle-gnb > li ').hover(function(){
-        $(this).find('.sub').toggle(function(){
-            $(this).find('.sub').stop().slideDown();
-            $(this).find('.sub').stop().slideUp();
-        });
-    });
-});
 
 
 

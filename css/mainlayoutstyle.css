@@ -313,7 +313,7 @@ body {
     position: absolute;;
     width: 540px;
     height: 300px;
-    left: 200px;
+    right: 200px;
     top: 50%;
     border: .5px solid #333;
     /* padding 상 우 하 좌 */
@@ -354,15 +354,21 @@ body {
 /* 토글메뉴의 메뉴 */
 #toggle-menu #toggle-gnb {
     color: #fff;
-    position: absolute;
+    /* position: absolute; */
     top: 109px;
     left: 200px;
     display: flex;
+    justify-content: center;
+    /* width: 1440px; */
+    margin: 0 auto;
 }
 #toggle-gnb > li{
     font-size: 26px;
     font-weight: 500;
     margin-right: 130px;
+}
+#toggle-gnb > li:last-child {
+    margin-right: 0;
 }
 #toggle-gnb > li > a {
     width: 100%;
@@ -395,13 +401,22 @@ body {
 }
 
 #toggle-menu .welcome {
-    position: absolute;;
+    position: absolute;
     width: 540px;
     height: 300px;
-    right: 103px;
+    left: 103px;
     top: 50%;
     color: #fff;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 140px;
+}
+#toggle-menu .welcome h1 {
+    font-size: 50px;
+}
+#toggle-menu .welcome h2 {
+    font-size: 60px;
 }
 
 

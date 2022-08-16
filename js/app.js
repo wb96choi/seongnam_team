@@ -78,7 +78,7 @@ $(function () {
 // 검색바 뿅 
 $(function () {
     $('#tool-zone .container .tool-wrap .search').click(function () {
-        $('#tool-zone .container .tool-wrap .search-bar').toggleClass('on')
+        $('#tool-zone .container .tool-wrap .search-bar').fadeIn(300).toggleClass('on')
     })
 });
 

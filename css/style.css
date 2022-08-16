@@ -435,6 +435,10 @@ footer .copyright {
 /* 모바일 레이아웃 */
 @media only screen and (max-width: 375px) {
 
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
     /* 헤더 */
     #header {
         height: var(--header-height-m);
@@ -484,10 +488,7 @@ footer .copyright {
     }
 
     /* 헤더 토글메뉴 */
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-    }
+
 
     #toggle-menu {
         position: absolute;

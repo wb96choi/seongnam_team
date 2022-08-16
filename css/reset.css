@@ -17,6 +17,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
     background-color: #000;
+    width: 100vw;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -76,7 +78,7 @@ h2 {
 
    .container {
         width: 375px;
-        margin: 0 auto;
+        margin-left: 0;
    }
 
    #login-btn {

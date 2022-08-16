@@ -200,7 +200,7 @@
         margin-top: 50px;
         padding-right: 30px;
         padding-left: 30px;
-        text-align: center;
+        text-align: left;
     }
     #content .content_in .top-text > h4{
         font-size: 20px;
@@ -234,7 +234,7 @@
     } 
     #company-section1 .container .com-col:last-child{
         display: flex;
-        text-align: center;
+        text-align: left;
         justify-content: center;
         flex-direction: column;
     }
@@ -244,7 +244,7 @@
     }
     #company-section1 .container .com-col .com-info p{
         font-size: 16px;
-        text-align: center;
+        text-align: left;
     }
     /* company-section2-오시는길 */
     #company-section2{

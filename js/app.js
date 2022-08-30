@@ -14,6 +14,15 @@ $(function () {
     })
 });
 
+// header menu
+$(function () {
+    $('#header nav .gnb > li').hover(function () {
+        $(this).find('.sub').stop().slideDown();
+    }, function () {
+        $(this).find('.sub').stop().slideUp();
+    });
+});
+
 // 로그인
 $(function () {
     const loginForm = document.querySelector("#login-form");

@@ -31,13 +31,7 @@ $(function () {
 });
 
 // 헤더 메뉴 (모바일만 적용되어야함)
-$(function () {
-    $('#header nav .gnb > li').hover(function () {
-        $(this).find('.sub').stop().slideDown();
-    }, function () {
-        $(this).find('.sub').stop().slideUp();
-    });
-});
+
 
 
 // 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션

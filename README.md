@@ -5,7 +5,8 @@
 -----------------
 성남아트센터 홈페이지를 반응형웹으로 리뉴얼하였습니다.
 
-사이트 링크 : https://wb96choi.github.io/seongnam_team/
+사이트 링크 : https://wb96choi.github.io/seongnam_team/ <br>
+피그마 시안 : https://www.figma.com/file/lmV6uWLEMexZWReuu5xxm4/%EC%84%B1%EB%82%A8%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0
 
 ### PC
 <img src="readme-image/pc.gif"><br>
